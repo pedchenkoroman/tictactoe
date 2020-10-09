@@ -1,0 +1,13 @@
+<form [formGroup]="form">
+  <app-input [parent]="form" name="player1">Player 1</app-input>
+
+  <app-input [parent]="form" name="player2">Player 2</app-input>
+
+  <app-button
+    [disabled]="this.form.invalid"
+    routerLink="/game"
+    (click)="start()"
+  >
+    Start
+  </app-button>
+</form>
