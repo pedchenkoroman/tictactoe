@@ -1,0 +1,15 @@
+:host {
+  margin: 0.5rem;
+
+  label {
+    font-size: 1rem;
+    margin-right: .025rem;
+
+    input {
+      height: calc(1.5em + 0.75rem + 2px);
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      margin: 0.25rem;
+    }
+  }
+}

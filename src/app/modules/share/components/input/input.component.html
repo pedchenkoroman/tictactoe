@@ -1,4 +1,9 @@
-<label for="{{name}}" [formGroup]="parent">
+<label for="{{ name }}" [formGroup]="parent">
   <ng-content></ng-content>
-  <input type="text" id="{{name}}" [formControlName]="name" />
+  <input
+    type="text"
+    autocomplete="off"
+    id="{{ name }}"
+    [formControlName]="name"
+  />
 </label>
