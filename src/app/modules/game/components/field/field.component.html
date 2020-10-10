@@ -1,6 +1,6 @@
 <div class="wrapper">
   <div class="field" #field>
-    <app-row *ngFor="let row of rows">
+    <app-row *ngFor="let row of rows$ | async">
       <app-cell *appRepeatCell="row"></app-cell>
     </app-row>
   </div>
